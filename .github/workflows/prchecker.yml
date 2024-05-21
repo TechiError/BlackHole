@@ -35,10 +35,10 @@ jobs:
             ${{ runner.os }}-gradle-
 
       # Setup the flutter environment.
-      #- uses: subosito/flutter-action@v2
-      #  with:
-      #    channel: ${{env.FLUTTER_CHANNEL}}
-      #    cache: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: ${{env.FLUTTER_CHANNEL}}
+          cache: true
 
       #- run: |
       #    echo storePassword=${{ secrets.STORE_PASSWORD }} >> ${{env.PROPERTIES_PATH}}
